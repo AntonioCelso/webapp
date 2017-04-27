@@ -12,6 +12,13 @@
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="/bower_components/jquery-ui/themes/smoothness/jquery-ui.min.css">
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">  
+    <link rel="stylesheet" href="/bower_components/ng-dialog/js/ngDialog.min.js">
+    <link rel="stylesheet" href="/bower_components/ng-dialog/css/ngDialog-theme-default.min.css">
+    <link rel="stylesheet" href="/bower_components/components-font-awesome/css/font-awesome.min.css"
+      
     <!-- endbuild -->
   </head>
   <body ng-app="sistemasApp">
@@ -20,41 +27,76 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="header">
-      <div class="navbar navbar-default" role="navigation">
-        <div class="container">
-          <div class="navbar-header">
+      <div class="container">
+          <div class="header">
+          <div class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+              <div class="navbar-header">
 
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse"  aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
 
-            <a class="navbar-brand" href="#/">sistemas</a>
-          </div>
+                <a class="navbar-brand" href="#/"><img alt="logo" src="images/logo_min.png"></a>
+              </div>
 
-          <div class="collapse navbar-collapse" id="js-navbar-collapse">
+              <div class="collapse navbar-collapse" id="js-navbar-collapse">
 
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#/">Home</a></li>
-              <li><a ng-href="#/about">About</a></li>
-              <li><a ng-href="#/">Contact</a></li>
-            </ul>
+                <ul class="nav navbar-nav">
+                  <li class="active"><a href="#/">Cardápio</a></li>
+                  <li><a ng-href="#/about">Contato</a></li>
+                </ul>
+                  
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a data-toggle="modal" data-target="#loginModal">
+                    <span class="glyphicon glyphicon-log-in"></span> Login</a>
+                    </li>
+                </ul>
+                    
+
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
 
-    <div class="container">
-    <div ng-view=""></div>
-    </div>
+    
+        <div class="jumbotron col-lg-8 col-sm-8">
+           <span class="hidden-xs"><img alt="jumbotron" class="img-fluid" src="/app/images/burrito_frango_detalhe.jpg" height="200px"></span>
+            <span class="hidden-xs"><img alt="jumbotron" class="img-fluid" src="/app/images/burrito_frango_detalhe.jpg" height="200px"></span>
+            <span class="hidden-xs"><img alt="jumbotron" class="img-fluid" src="/app/images/burrito_frango_detalhe.jpg" height="200px"></span>
+            <span class="hidden-xs"><img alt="jumbotron" class="img-fluid" src="/app/images/burrito_frango_detalhe.jpg" height="200px"></span>
+            <span class="hidden-xs"><img alt="jumbotron" class="img-fluid" src="/app/images/burrito_frango_detalhe.jpg" height="200px"></span>
+            <span class="hidden-xs"><img alt="jumbotron" class="img-fluid" src="/app/images/burrito_frango_detalhe.jpg" height="200px"></span>
+            <span class="hidden-xs"><img alt="jumbotron" class="img-fluid" src="/app/images/burrito_frango_detalhe.jpg" height="200px"></span>
+        </div>
+        <div class="col-lg-3 col-lg-offset-1">
+        <div  class="panel panel-primary " data-spy="affix">
+            <div class="panel-heading"><h3 class="panel-title">carrinho de compra</h3></div>
+            <div class="panel-body">
+                <span class="hidden-xs"><img alt="jumbotron" class="img-fluid" src="/app/images/burrito_frango_detalhe.jpg" height="50px"></span>
+            </div>
+        </div>
+        </div>
+          
+    
+          
+          
+    </div> <!-- fim do container principal-->
+  
 
     <div class="footer">
       <div class="container">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+        
+        
+          
+        <p><span class="glyphicon glyphicon-heart"></span> by Antonio Celso</p>
       </div>
+    </div>
+    
+    <div ng-view=""></div>
     </div>
 
 
@@ -78,6 +120,11 @@
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/about.js"></script>
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+        <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+      
+                
         <!-- endbuild -->
 </body>
 </html>

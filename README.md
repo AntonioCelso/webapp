@@ -1,8 +1,5 @@
 # sistemas
-
-This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
-version 0.16.0.
-
+Projeto de um WebApp baseada em SPA usando Bootstrap e AngularJS, como parte do projeto final do curso Fullstack developer Universidade Taiwan
 ## Build & development
 
 Run `grunt` for building and `grunt serve` for preview.
